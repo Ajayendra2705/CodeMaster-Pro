@@ -26,6 +26,9 @@ export default function Navbar({
         >
           Codeforces Dashboard
         </Typography>
+        <Button color="inherit" component={RouterLink} to="/recommendations">Recommendations</Button>
+        <Button color="inherit" component={RouterLink} to="/submissions">Submissions</Button>
+        <Button color="inherit" component={RouterLink} to="/analyze">Analyze Submission</Button>
         <Button color="inherit" component={RouterLink} to="/ratings">Ratings</Button>
         <Button color="inherit" component={RouterLink} to="/problems">Problems</Button>
         <Button color="inherit" component={RouterLink} to="/contests">Contests</Button>

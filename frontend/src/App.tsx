@@ -5,6 +5,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
+import RecommendationsPage from './pages/RecommendationsPage';
+import RecentSubmissionsPage from './pages/RecentSubmissionsPage';
+import SubmissionAnalysisPage from './pages/SubmissionAnalysisPage';
 
 // Dummy pages for demonstration
 function RatingsPage() { return <div>Ratings Page</div>; }
@@ -44,6 +47,9 @@ export default function App() {
           <Box sx={{ p: 3 }}>
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/recommendations" element={<RecommendationsPage />} />
+              <Route path="/submissions" element={<RecentSubmissionsPage />} />
+              <Route path="/analyze" element={<SubmissionAnalysisPage />} />
               <Route path="/ratings" element={<RatingsPage />} />
               <Route path="/problems" element={<ProblemsPage />} />
               <Route path="/contests" element={<ContestsPage />} />
