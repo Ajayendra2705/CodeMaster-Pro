@@ -28,11 +28,8 @@ export default function Navbar({
         </Typography>
         <Button color="inherit" component={RouterLink} to="/recommendations">Recommendations</Button>
         <Button color="inherit" component={RouterLink} to="/submissions">Submissions</Button>
-        <Button color="inherit" component={RouterLink} to="/analyze">Analyze Submission</Button>
-        <Button color="inherit" component={RouterLink} to="/ratings">Ratings</Button>
+        <Button color="inherit" component={RouterLink} to="/analyze">Analyze</Button>
         <Button color="inherit" component={RouterLink} to="/problems">Problems</Button>
-        <Button color="inherit" component={RouterLink} to="/contests">Contests</Button>
-        <Button color="inherit" component={RouterLink} to="/about">About</Button>
         <Box sx={{ ml: 2 }}>
           <IconButton
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
