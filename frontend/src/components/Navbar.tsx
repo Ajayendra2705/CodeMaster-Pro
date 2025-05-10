@@ -29,7 +29,8 @@ export default function Navbar({
         <Button color="inherit" component={RouterLink} to="/recommendations">Recommendations</Button>
         <Button color="inherit" component={RouterLink} to="/submissions">Submissions</Button>
         <Button color="inherit" component={RouterLink} to="/analyze">Analyze</Button>
-        <Button color="inherit" component={RouterLink} to="/problems">Problems</Button>
+        <Button color="inherit" component={RouterLink} to="/challenges">Debugger</Button>
+
         <Box sx={{ ml: 2 }}>
           <IconButton
             onClick={() => setMode(mode === "light" ? "dark" : "light")}

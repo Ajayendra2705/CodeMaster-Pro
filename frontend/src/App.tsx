@@ -5,10 +5,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
-import ProblemsPage from "./pages/ProblemsPage";
 import RecommendationsPage from './pages/RecommendationsPage';
 import RecentSubmissionsPage from './pages/RecentSubmissionsPage';
 import SubmissionAnalysisPage from './pages/SubmissionAnalysisPage';
+import ChallengesListPage from "./pages/ChallengesListPage";
+import ChallengeAttemptPage from "./pages/ChallengeAttemptPage";
 
 export default function App() {
   const [mode, setMode] = useState<"light" | "dark">("dark");
@@ -44,7 +45,8 @@ export default function App() {
               <Route path="/recommendations" element={<RecommendationsPage />} />
               <Route path="/submissions" element={<RecentSubmissionsPage />} />
               <Route path="/analyze" element={<SubmissionAnalysisPage />} />
-              <Route path="/problems" element={<ProblemsPage />} />
+              <Route path="/challenges" element={<ChallengesListPage />} />
+              <Route path="/challenge/:id" element={<ChallengeAttemptPage />} />
             </Routes>
           </Box>
         </Box>
